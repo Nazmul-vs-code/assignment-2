@@ -1,3 +1,66 @@
+@import "tailwindcss";
+
 body {
-    background: red;
+    background: #1A0B2E;
+    color: white;
+}
+
+/* shared elements */
+
+/* header section */
+/* nav */
+#navebar {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#navebar h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#wave {
+    background: linear-gradient(#F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+
+#navebar ul {
+    font-size: 70%;
+    display: flex;
+    align-items: center;
+    gap: 30%;
+}
+
+#navebar #subscribe {
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #37035c);
+    font-size: .8rem;
+    padding: 8px 16px;
+    border-radius: 18px;
+}
+
+#bar {
+    display: none;
+}
+
+
+/* Media query */
+@media screen and (max-width:577px) {
+
+    #navebar {
+        width: 90%;
+    }
+    #navebar ul,
+    #subscribe {
+        display: none;
+    }
+
+    #bar {
+        display: block;
+    }
 }

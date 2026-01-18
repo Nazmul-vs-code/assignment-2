@@ -50,7 +50,7 @@ body {
 
 /* banner part */
 #banner {
-    background: url("assets/hero-bg.png");
+    background: url("./assets/hero-bg.png");
     /* background: no-repeat; */
     background-size: cover;
     display: flex;
@@ -75,7 +75,7 @@ body {
     border: solid;
     align-items: center;
     justify-content: center;
-    background: url("assets/hero-circle.png");
+    background: url("./assets/hero-circle.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

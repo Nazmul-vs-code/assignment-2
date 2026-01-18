@@ -6,6 +6,12 @@ body {
 }
 
 /* shared elements */
+.btn {
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #37035c);
+    font-size: .8rem;
+    padding: 8px 16px;
+    border-radius: 18px;
+}
 
 /* header section */
 /* nav */
@@ -37,17 +43,68 @@ body {
     gap: 30%;
 }
 
-#navebar #subscribe {
-    background: linear-gradient(to right, #F7E93F, #FB09B4, #37035c);
-    font-size: .8rem;
-    padding: 8px 16px;
-    border-radius: 18px;
-}
 
 #bar {
     display: none;
 }
 
+/* banner part */
+#banner {
+    background: url("assets/hero-bg.png");
+    /* background: no-repeat; */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    width: 100%;
+}
+
+.banner-container {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-container .mic {
+    display: flex;
+    border: solid;
+    align-items: center;
+    justify-content: center;
+    background: url("assets/hero-circle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width:  200px;
+}
+
+.banner-container .mic img {
+    width: 40%;
+}
+
+.banner-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Adds space between the two buttons */
+    margin-top: 25px; /* Adds space between text and buttons */
+    width: 100%;
+
+}
+
+#subscribe2 {
+    background-color: rgba(250, 235, 215, 0);
+    border: solid;
+    border-color: rgb(5, 254, 21);
+    border-radius: 8px;
+    color: rgb(5, 254, 21);
+    padding: 5px;
+}
 
 /* Media query */
 @media screen and (max-width:577px) {
@@ -63,4 +120,23 @@ body {
     #bar {
         display: block;
     }
+
+    #banner {
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .banner-container .mic {
+    display: flex;
+    border: solid;
+    align-items: center;
+    justify-content: center;
+    /* background: url("assets/hero-circle.png"); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    width:  100px;
+}
 }

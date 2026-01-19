@@ -1,3 +1,5 @@
+@import "tailwind";
+
 body {
     background: #1A0B2E;
     color: white;
@@ -54,8 +56,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 80vh;
+    /* min-height: 80vh; */
+    border: solid;
     width: 100%;
+    padding: 20px;
 }
 
 .banner-container {
@@ -67,22 +71,32 @@ body {
     align-items: center;
     text-align: center;
 }
+.banner-container .mic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid red;
+    height: 100%;
+    width: 60%;
+}
 
 .banner-container .mic {
     display: flex;
-    border: solid;
+    /* border: solid; */
     align-items: center;
     justify-content: center;
     background: url("./assets/hero-circle.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 200px;
-    width:  200px;
+    height: 300px;
+    width:  300px;
+    margin-top: 20px;
 }
 
 .banner-container .mic img {
     width: 40%;
+    /* height: ; */
 }
 
 .banner-buttons {
@@ -95,13 +109,34 @@ body {
 
 }
 
+.listen {
+    /* width: 100%;
+    height: 100%; */
+}
+
 #subscribe2 {
     background-color: rgba(250, 235, 215, 0);
-    border: solid;
+    border: solid 1px;
     border-color: rgb(5, 254, 21);
     border-radius: 8px;
     color: rgb(5, 254, 21);
     padding: 5px;
+}
+
+.NEW {
+    margin-left: -20%;
+    margin-top: -40%;
+    color: black;
+    background-color: #00ff88;
+    padding: 5px 5px;
+    border-radius: 15px;
+    font-weight: 600;
+    width: 20%;
+    box-shadow: #00ff88 0px 0 10px ;
+}
+
+#subscribe2 i {
+
 }
 
 /* Media query */
@@ -120,21 +155,26 @@ body {
     }
 
     #banner {
-        width: 100%;
-        background-size: contain;
+        background-size: 100% auto; 
+        min-height: 100vh;
+        /* padding-bottom: 180px;  */
         background-repeat: no-repeat;
+    }
+    .banner-container {
+        width: 100%;
+        margin-top: -210px;
     }
 
     .banner-container .mic {
     display: flex;
-    border: solid;
+    /* border: solid; */
     align-items: center;
     justify-content: center;
     /* background: url("assets/hero-circle.png"); */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100px;
-    width:  100px;
+    height: 150px;
+    width:  150px;
 }
 }

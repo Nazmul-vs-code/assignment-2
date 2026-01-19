@@ -326,6 +326,58 @@ body {
     padding-bottom: 8px;
 }
 
+/* Meeting with host */
+.meeting-host {
+    margin: 0 auto;
+    width: 70%;
+    /* border: solid 1px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #0c299d18;
+    border-radius: 20px;
+    transition: transform 0.4s ease
+}
+
+.meeting-host:hover {
+    box-shadow: #00ff88 0 0 15px;
+    transform: scale(1.05);
+}
+
+.host-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 60%;
+}
+
+.host-content h1 {
+    font-weight: 600;
+}
+.host-content p {
+    font-size: 80%;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.midea div{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.logo {
+    border: solid 1px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
 /* Media query */
 @media screen and (max-width:577px) {
 
@@ -398,5 +450,16 @@ body {
 
     .videos h1 {
         font-size: 1rem;
+    }
+
+    .meeting-host {
+        flex-direction: column;
+        width: 88%;
+        text-align: center;
+    }
+
+    .meeting-host p {
+        text-align: center;
+        width: 105%;
     }
 }

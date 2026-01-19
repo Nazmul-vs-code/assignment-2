@@ -55,7 +55,7 @@ body {
     align-items: center;
     justify-content: center;
     /* min-height: 80vh; */
-    border: solid;
+    border-top: 1px solid rgba(128, 128, 128, 0.457);
     width: 100%;
     padding: 20px;
 }
@@ -69,6 +69,7 @@ body {
     align-items: center;
     text-align: center;
 }
+
 .banner-container .mic-container {
     display: flex;
     justify-content: center;
@@ -88,7 +89,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     height: 300px;
-    width:  300px;
+    width: 300px;
     margin-top: 20px;
 }
 
@@ -101,8 +102,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px; /* Adds space between the two buttons */
-    margin-top: 25px; /* Adds space between text and buttons */
+    gap: 15px;
+    /* Adds space between the two buttons */
+    margin-top: 25px;
+    /* Adds space between text and buttons */
     width: 100%;
 
 }
@@ -130,12 +133,135 @@ body {
     border-radius: 15px;
     font-weight: 600;
     width: 20%;
-    box-shadow: #00ff88 0px 0 10px ;
+    box-shadow: #00ff88 0px 0 10px;
 }
 
-#subscribe2 i {
+/* #subscribe2 i {
+
+} */
+
+/* about */
+#about {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 101px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: grey solid 1px;
+    padding-bottom: 30px;
+}
+
+#about h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+#about p {
+    font-size: 80%;
+    font-weight: 300;
+    width: 70%;
+}
+
+
+/* ratings */
+#ratings {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#ratings h1{
+    color: #00ff88;
+    font-weight: bold;
+    font-size: 2rem;
+}
+#ratings p {
+    font-size: 70%;
+    font-weight: 300;
 
 }
+/* main */
+#product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+#producttype {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #230E3D;
+    margin-bottom: 30px;
+}
+
+.porducts {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+}
+
+.card {
+    border: solid red 1px;
+    box-shadow: red 0 0 5px;
+    border-radius: 20px;
+    padding: 0 30px ;
+    padding-top: 30px;
+    background-color: rgba(74, 73, 73, 0.144);
+}
+
+.card:hover {
+    box-shadow: skyblue 0 0 10px;
+}
+
+.card h1 {
+    font-size: 1.5rem;
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+.card p {
+    font-size: 80%;
+    font-weight: 300;
+}
+
+.card1 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.card2 {
+    grid-column: span 2;
+    /* grid-row: span 2; */
+
+}
+.card3 {
+    grid-column: span 2;
+    /* grid-row: span 2; */
+
+}
+.card4 {
+    grid-column: span 2;
+    /* grid-row: span 2; */
+
+}
+.card5 {
+    grid-column: span 1;
+    /* grid-row: span 2; */
+
+}
+
+
 
 /* Media query */
 @media screen and (max-width:577px) {
@@ -143,6 +269,7 @@ body {
     #navebar {
         width: 90%;
     }
+
     #navebar ul,
     #subscribe {
         display: none;
@@ -153,26 +280,46 @@ body {
     }
 
     #banner {
-        background-size: 100% auto; 
+        background-size: 100% auto;
         min-height: 100vh;
         /* padding-bottom: 180px;  */
         background-repeat: no-repeat;
     }
+
     .banner-container {
         width: 100%;
         margin-top: -210px;
     }
 
     .banner-container .mic {
-    display: flex;
-    /* border: solid; */
-    align-items: center;
-    justify-content: center;
-    /* background: url("assets/hero-circle.png"); */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 150px;
-    width:  150px;
-}
+        display: flex;
+        /* border: solid; */
+        align-items: center;
+        justify-content: center;
+        /* background: url("assets/hero-circle.png"); */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 150px;
+        width: 150px;
+    }
+    #about {
+        margin-top: 0;
+        width: 95%;
+    }
+    #about h1 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    #ratings {
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .porducts {
+        display: flex;
+        flex-direction: column;
+    }
 }

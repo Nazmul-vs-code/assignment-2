@@ -378,6 +378,45 @@ body {
     padding: 5px;
 }
 
+/* Footer */
+
+footer {
+    margin-top: 10%;
+    background: url("./assets/footer-bg.png");
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.footer-content h1 {
+    font-size: 3.5rem;
+}
+
+
+.footer-midea {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    text-align: right;
+    cursor: pointer;
+}
+
+.footer-midea p {
+    font-size: 60%;
+}
+
 /* Media query */
 @media screen and (max-width:577px) {
 
@@ -461,5 +500,25 @@ body {
     .meeting-host p {
         text-align: center;
         width: 105%;
+    }
+
+    footer {
+        height: 100%;
+        background-attachment: scroll;
+    }
+    .footer-content {
+        padding: 40px 15px; /* Tighter padding on mobile */
+    }
+    .footer-content h1{
+        font-size: 2rem;
+    }
+    .footer-midea  {
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+    }
+
+    footer p {
+        margin: 0 auto;
+        font-size: 0.8rem;
     }
 }

@@ -262,6 +262,69 @@ body {
 }
 
 
+.episods {
+    margin: 0 auto;
+    background-color: #1A0B2E;
+    width: 70%;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 25px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.video {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s ease;
+    text-align: left;
+}
+
+.video:hover {
+    transform: translateX(-10px);
+    border-color: #00ff88;
+}
+
+
+.vid {
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+.vid iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.video h1 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.video p {
+    font-size: 70%;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.time {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 8px;
+}
+.time p {
+    padding-bottom: 8px;
+}
 
 /* Media query */
 @media screen and (max-width:577px) {
@@ -321,5 +384,19 @@ body {
     .porducts {
         display: flex;
         flex-direction: column;
+    }
+
+    .episods h1 {
+        font-size: 1.4rem;
+    }
+    .videos {
+        grid-template-columns: repeat(1,1fr);
+        width: 120%;
+        gap: 15px;
+        margin-left: -10%;
+    }
+
+    .videos h1 {
+        font-size: 1rem;
     }
 }
